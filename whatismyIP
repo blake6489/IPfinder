@@ -1,0 +1,16 @@
+#!/usr/bin/perl
+
+use Net::SSH::Perl;
+my $ssh = Net::SSH::Perl->new(192.168.227.1);
+$ssh->login('admin', 'undrthebridge');
+my($stdout, $stderr, $exit) = $ssh->cmd($cmd);
+    
+#ssh -l admin 192.168.227.1
+
+#ifconfig ppp_0_35_1
+
+#determin IP
+
+#post IP
+
+
